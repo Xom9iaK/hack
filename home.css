@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #BCD1BB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.logo {
+    position: static;
+    display: block;
+    width: 150px;
+    height: auto;
+    margin-top: 25px;
+    margin-left: 150px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-content {
+    width: 80%;
+    height: 45vh;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.buttons-container {
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.btn {
+    padding: 12px 60px;
+    border: none;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.register {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.login {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+}
+
+/* Base styles remain the same */
+
+/* Tablet devices */
+@media screen and (max-width: 1024px) {
+    .btn {
+        padding: 10px 40px;
+        font-size: 20px;
+        width: 180px;
+    }
+    
+    .role-btn {
+        padding: 10px 30px;
+        font-size: 20px;
+        width: 160px;
+    }
+    .logo {
+        width: 120px;
+        margin-top: 80px;
+        margin-left: 30px;
+    }
+    
+    .top-rectangle {
+        height: 200px;
+    }
+    
+    .second-rectangle {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+    .btn {
+        padding: 8px 30px;
+        font-size: 18px;
+        width: 150px;
+    }
+    
+    .role-btn {
+        padding: 8px 20px;
+        font-size: 18px;
+        width: 130px;
+    }
+    .logo {
+        width: 100px;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+    
+    .top-rectangle {
+        height: 150px;
+    }
+    
+    .second-rectangle {
+        width: 95%;
+        margin: 15px auto;
+        padding: 15px;
+    }
+    
+    /* Adjust any text sizes */
+    h1 {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    .btn {
+        padding: 6px 20px;
+        font-size: 16px;
+        width: 120px;
+    }
+    
+    .role-btn {
+        padding: 6px 15px;
+        font-size: 16px;
+        width: 100px;
+    }
+    .logo {
+        width: 80px;
+        margin-top: 40px;
+        margin-left: 15px;
+    }
+    
+    .top-rectangle {
+        height: 120px;
+    }
+    
+    .second-rectangle {
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+}
