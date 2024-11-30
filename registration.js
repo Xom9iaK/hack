@@ -19,3 +19,4 @@ document.querySelector('.next').addEventListener('click', () => {
 document.querySelector('.login-link').addEventListener('click', () => {
 	// Переход на страницу входа
 })
+//fdslf
